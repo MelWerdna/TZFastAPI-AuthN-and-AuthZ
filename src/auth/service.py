@@ -27,7 +27,10 @@ def authenticate_user(email: str, password: str) -> dict | None:
     users = load_users_from_file()
     user = None
     for user_existing in users:
-        if user_existing["email"].lower() == email.lower():
+        if (
+            user_existing["email"].lower() == email.lower()
+            and not user_existing["is_deleted"]
+        ):
             user = user_existing
             user_existing.update({"is_active": True})
             save_users_to_file(users)
