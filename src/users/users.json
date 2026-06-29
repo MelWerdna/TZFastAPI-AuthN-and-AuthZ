@@ -4,7 +4,7 @@
         "email": "new_email@example.com",
         "username": "new_username",
         "password": "$2b$12$Faee/wUgQrBVh.so5VLJY.XdFrdZ7PsG4AvHucacE9YNafOGX4Wfi",
-        "is_active": false,
+        "is_active": true,
         "is_deleted": false,
         "token_version": 1,
         "role": "user"
@@ -32,7 +32,7 @@
     {
         "id": 4,
         "email": "text1@example.com",
-        "username": "Muhahaha",
+        "username": "TestSuperUser",
         "password": "$2b$12$XIelWr9qrW0brqlTHsQ1IOHCAdx8Hx47p43/uo284DLn2shZdIR5O",
         "is_active": true,
         "is_deleted": false,
@@ -47,6 +47,6 @@
         "is_active": true,
         "is_deleted": false,
         "token_version": 0,
-        "role": "user"
+        "role": "superuser"
     }
 ]
